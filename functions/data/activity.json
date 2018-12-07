@@ -1,0 +1,29 @@
+{
+  "maze": {
+    "title": "maze",
+    "happiness": 1,
+    "energy": 1,
+    "image": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/maze.png?alt=media&token=8072a9e1-8d40-4125-9418-2f4aaaf7e4e2",
+    "response": "playing in the maze ",
+    "actionImage": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/maze.png?alt=media&token=8072a9e1-8d40-4125-9418-2f4aaaf7e4e2",
+    "audio": "https://actions.google.com/sounds/v1/doors/turning_door_knob.ogg"
+  },
+  "wheel": {
+    "title": "wheel",
+    "happiness": 2,
+    "energy": 2,
+    "image": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/wheel.png?alt=media&token=95481ba8-94cf-4640-9ca0-c7ff47b299f6",
+    "response": "running in the wheel ",
+    "actionImage": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/wheel.png?alt=media&token=95481ba8-94cf-4640-9ca0-c7ff47b299f6",
+    "audio": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/j-little-wheel-spin-2-1.mp3?alt=media&amp;token=837a5593-7f13-4bcc-a579-f89605c7fce9"
+  },
+  "ball": {
+    "title": "ball",
+    "happiness": 3,
+    "energy": 3,
+    "image": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/ball.png?alt=media&token=c3171eb7-ca96-4bc8-a8c1-4b76e16aeac8",
+    "response": "running in the ball ",
+    "actionImage": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/ball.png?alt=media&token=c3171eb7-ca96-4bc8-a8c1-4b76e16aeac8",
+    "audio": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/j-ball-rolling-on-table-long.mp3?alt=media&amp;token=d2abded5-4324-4020-be3c-72d47f1f5502"
+  }
+}
