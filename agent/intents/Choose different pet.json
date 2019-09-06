@@ -1,0 +1,50 @@
+{
+  "id": "a4c9a0e4-7688-4a11-9b3f-4296fd81966a",
+  "name": "Choose different pet",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "db63eb53-1492-495e-8137-4301c2a57ea2",
+          "required": true,
+          "dataType": "@animal",
+          "name": "animal",
+          "value": "$animal",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What kind of animal are you looking for?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

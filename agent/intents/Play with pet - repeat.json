@@ -1,0 +1,49 @@
+{
+  "id": "070708f7-d077-477b-bbed-429595df994f",
+  "parentId": "10b7298d-30a7-4836-95fd-73c335058b29",
+  "rootParentId": "10b7298d-30a7-4836-95fd-73c335058b29",
+  "name": "Play with pet - repeat",
+  "auto": true,
+  "contexts": [
+    "Playwithpet-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Playwithpet.Playwithpet-repeat",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f73cfe99-c44b-4811-a4f6-f780ec779c30",
+          "required": false,
+          "dataType": "@activityType",
+          "name": "activityType",
+          "value": "#Playwithpet-followup.activityType",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

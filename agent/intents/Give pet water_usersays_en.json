@@ -1,0 +1,50 @@
+[
+  {
+    "id": "5eeb7843-3a1d-4cec-9cc7-8897a410c703",
+    "data": [
+      {
+        "text": "water",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f4ac758c-d180-4a86-bc04-88358605b467",
+    "data": [
+      {
+        "text": "pour him some water",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5c149c4b-3638-4da8-9008-5e0256cd3b51",
+    "data": [
+      {
+        "text": "Give him something to drink",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "773f0048-424f-49f6-9f29-c7c5f4418162",
+    "data": [
+      {
+        "text": "Give him some water",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

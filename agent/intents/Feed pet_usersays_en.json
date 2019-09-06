@@ -1,0 +1,70 @@
+[
+  {
+    "id": "3a7e6904-113c-486c-a635-4c10d900d83b",
+    "data": [
+      {
+        "text": "feed him ",
+        "userDefined": false
+      },
+      {
+        "text": "seeds",
+        "alias": "foodType",
+        "meta": "@foodType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a93c73d8-e415-4211-ad93-a131f8dba8a0",
+    "data": [
+      {
+        "text": "how about a ",
+        "userDefined": false
+      },
+      {
+        "text": "carrot",
+        "alias": "foodType",
+        "meta": "@foodType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f1eaa331-5c89-4846-a308-014749f7195d",
+    "data": [
+      {
+        "text": "give him some ",
+        "userDefined": false
+      },
+      {
+        "text": "broccolis",
+        "alias": "foodType",
+        "meta": "@foodType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "21456567-0368-4627-9635-50c6f85cea50",
+    "data": [
+      {
+        "text": "broccoli",
+        "alias": "foodType",
+        "meta": "@foodType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

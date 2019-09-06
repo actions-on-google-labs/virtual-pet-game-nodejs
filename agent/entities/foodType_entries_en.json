@@ -1,0 +1,23 @@
+[
+  {
+    "value": "broccoli",
+    "synonyms": [
+      "broccoli"
+    ]
+  },
+  {
+    "value": "carrot",
+    "synonyms": [
+      "carrot"
+    ]
+  },
+  {
+    "value": "sunflower_seed",
+    "synonyms": [
+      "seed",
+      "seeds",
+      "sunflower",
+      "sunflower seed"
+    ]
+  }
+]

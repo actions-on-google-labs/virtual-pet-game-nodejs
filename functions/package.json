@@ -1,6 +1,5 @@
 {
   "name": "virtual-pet-game",
-  "description": "A sample for the Actions on Google game",
   "version": "0.0.1",
   "private": true,
   "license": "Apache Version 2.0",
@@ -16,9 +15,11 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
-    "actions-on-google": "^2.2.0",
-    "firebase-admin": "~6.0.0",
-    "firebase-functions": "^2.0.3",
-    "string-template": "^1.0.0"
+    "@firebase/firestore": "^1.8.0",
+    "actions-on-google": "^2.10.0",
+    "firebase-admin": "~8.0.0",
+    "firebase-functions": "^3.1.0",
+    "string-template": "^1.0.0",
+    "uuid": "^3.3.2"
   }
 }

@@ -1,0 +1,84 @@
+[
+  {
+    "value": "bird",
+    "synonyms": [
+      "bird"
+    ]
+  },
+  {
+    "value": "bunny",
+    "synonyms": [
+      "bunny",
+      "rabbit"
+    ]
+  },
+  {
+    "value": "cat",
+    "synonyms": [
+      "cat",
+      "kitten"
+    ]
+  },
+  {
+    "value": "dog",
+    "synonyms": [
+      "dog",
+      "puppy"
+    ]
+  },
+  {
+    "value": "ferret",
+    "synonyms": [
+      "ferret"
+    ]
+  },
+  {
+    "value": "fish",
+    "synonyms": [
+      "fish"
+    ]
+  },
+  {
+    "value": "guinea pig",
+    "synonyms": [
+      "guinea pig"
+    ]
+  },
+  {
+    "value": "hamster",
+    "synonyms": [
+      "hamster"
+    ]
+  },
+  {
+    "value": "horse",
+    "synonyms": [
+      "horse"
+    ]
+  },
+  {
+    "value": "lizard",
+    "synonyms": [
+      "lizard"
+    ]
+  },
+  {
+    "value": "rat",
+    "synonyms": [
+      "mouse",
+      "rat"
+    ]
+  },
+  {
+    "value": "snake",
+    "synonyms": [
+      "snake"
+    ]
+  },
+  {
+    "value": "turtle",
+    "synonyms": [
+      "turtle"
+    ]
+  }
+]

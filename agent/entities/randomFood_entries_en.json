@@ -1,0 +1,105 @@
+[
+  {
+    "value": "banana",
+    "synonyms": [
+      "banana"
+    ]
+  },
+  {
+    "value": "apple",
+    "synonyms": [
+      "apple"
+    ]
+  },
+  {
+    "value": "pizza",
+    "synonyms": [
+      "pizza"
+    ]
+  },
+  {
+    "value": "taco",
+    "synonyms": [
+      "taco"
+    ]
+  },
+  {
+    "value": "cupcake",
+    "synonyms": [
+      "cupcake"
+    ]
+  },
+  {
+    "value": "lollipop",
+    "synonyms": [
+      "lollipop",
+      "candy"
+    ]
+  },
+  {
+    "value": "eggplant",
+    "synonyms": [
+      "eggplant"
+    ]
+  },
+  {
+    "value": "mushroom",
+    "synonyms": [
+      "mushroom"
+    ]
+  },
+  {
+    "value": "tomato",
+    "synonyms": [
+      "tomato"
+    ]
+  },
+  {
+    "value": "potato",
+    "synonyms": [
+      "potato"
+    ]
+  },
+  {
+    "value": "turkey",
+    "synonyms": [
+      "turkey"
+    ]
+  },
+  {
+    "value": "chicken",
+    "synonyms": [
+      "chicken"
+    ]
+  },
+  {
+    "value": "beef",
+    "synonyms": [
+      "beef"
+    ]
+  },
+  {
+    "value": "pig",
+    "synonyms": [
+      "pig"
+    ]
+  },
+  {
+    "value": "strawberry",
+    "synonyms": [
+      "strawberry"
+    ]
+  },
+  {
+    "value": "peach",
+    "synonyms": [
+      "peach"
+    ]
+  },
+  {
+    "value": "blueberry",
+    "synonyms": [
+      "blueberry"
+    ]
+  }
+]

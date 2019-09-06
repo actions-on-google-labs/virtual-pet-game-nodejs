@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ca5c7ac8-5ed7-4cf7-a80c-9e449cc11022",
+    "data": [
+      {
+        "text": "exit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee58adac-b851-4c79-a933-025a5790ec76",
+    "data": [
+      {
+        "text": "leave me alone",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "34689680-4504-483a-ae81-913cc6ad4cb8",
+    "data": [
+      {
+        "text": "i don\u0027t want to play it anymore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "89f3b1b5-fc68-40ca-aa2f-e55b62661e8d",
+    "data": [
+      {
+        "text": "stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54ac8ecd-94c9-4b7e-b6da-120afdcdf4a5",
+    "data": [
+      {
+        "text": "cancel",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

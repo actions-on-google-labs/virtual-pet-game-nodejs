@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c3043a63-79fe-4d4a-8ce3-52a031f08f16",
+    "data": [
+      {
+        "text": "mushroom",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d1ec67b4-07a4-4e22-aacb-460adf099fa4",
+    "data": [
+      {
+        "text": "Feed him ",
+        "userDefined": false
+      },
+      {
+        "text": "hamburger",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fc94101f-83d6-4754-9482-5b9d147b3634",
+    "data": [
+      {
+        "text": "i like to eat ",
+        "userDefined": false
+      },
+      {
+        "text": "banana",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "09c456d4-33e0-4de3-9657-f519708173a1",
+    "data": [
+      {
+        "text": "Let\u0027s try ",
+        "userDefined": false
+      },
+      {
+        "text": "pizza",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cd215408-dc5f-4763-805f-1d75f70dd800",
+    "data": [
+      {
+        "text": "why don\u0027t we try ",
+        "userDefined": false
+      },
+      {
+        "text": "lollipop",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb3ebfdf-5461-4244-9de1-7d2ee8a7a600",
+    "data": [
+      {
+        "text": "cupcake",
+        "alias": "randomFood",
+        "meta": "@randomFood",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "9312ca71-777e-4131-a299-03649e202e43",
+  "name": "foodType",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

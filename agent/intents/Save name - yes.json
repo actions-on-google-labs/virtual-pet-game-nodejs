@@ -1,0 +1,42 @@
+{
+  "id": "0b10e3a6-2038-4e55-aa74-177b80e9793c",
+  "parentId": "975f83d8-ee2a-4038-b1f9-37d99c5ced78",
+  "rootParentId": "975f83d8-ee2a-4038-b1f9-37d99c5ced78",
+  "name": "Save name - yes",
+  "auto": true,
+  "contexts": [
+    "Savename-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Savename.Savename-yes",
+      "affectedContexts": [
+        {
+          "name": "Savename-yes-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

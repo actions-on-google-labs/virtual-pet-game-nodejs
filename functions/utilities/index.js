@@ -1,15 +1,15 @@
-// Copyright 2018, Google, Inc.
-// Licensed under the Apache License, Version 2.0 (the 'License');
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//    http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an 'AS IS' BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+Copyright 2019 Google Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
 
 'use strict';
 
@@ -20,12 +20,13 @@ const admin = require('../database');
 const db = admin.firestore();
 const ownerCollectionRef = db.collection('owners');
 const format = require("string-template");
+const uuid = require('uuid');
 
-const FOOD_TYPES = require('../data/food.json');
-const ACTIVITY_TYPES = require('../data/activity.json');
+const FOOD_TYPES = require('../data/food.js');
+const ACTIVITY_TYPES = require('../data/activity.js');
 const LEVELS = require('../data/levels.json');
 const BADGES = require('../data/badges.json');
-const PROMPTS = require('../prompts/static_prompts.json');
+const PROMPTS = require('../prompts/static_prompts');
 
 const LOWER_BOUND_ENERGY = 3;
 const LOWER_BOUND_HAPPINESS = 3;
@@ -42,11 +43,11 @@ async function findOwnerByID(id) {
     const { name, pet, pendingBadges, achievedBadges, level } = snapshot.data();
     const owner = new Owner(snapshot.id, name, pendingBadges, achievedBadges, level);
     if (pet) {
-      owner._pet = new Pet(pet.name, pet.energy, pet.happiness, pet.energyLevelLastUpdated, pet.happinessLevelLastUpdated, pet.playTimes, pet.eatTimes);
+      owner.pet = new Pet(pet.name, pet.energy, pet.happiness, pet.energyLevelLastUpdated, pet.happinessLevelLastUpdated, pet.playTimes, pet.eatTimes, pet.adoptionDate);
     }
     return owner;
   }
-  console.log('Owner was not found');
+  console.log('Owner was not found:  the id is ', id);
   return undefined;
 }
 
@@ -71,17 +72,17 @@ function grantBadge(owner, badgeName) {
   if (owner.hasBadge(badgeName)) {
     return false;
   }
-  const badgeNameIndex = owner.pendingBadges().indexOf(badgeName);
+  const badgeNameIndex = owner.pendingBadges.indexOf(badgeName);
   if (badgeNameIndex === -1) {
     return false;
   }
-  owner.achievedBadges().push(badgeName);
-  owner.pendingBadges().splice(badgeNameIndex, 1);
+  owner.achievedBadges.push(badgeName);
+  owner.pendingBadges.splice(badgeNameIndex, 1);
   return true;
-};
+}
 
 function getBadgesByLevel(level) {
-  level + "";
+  level += "";
   const badges = LEVELS[level];
   if (badges) {
     return badges.concat([]);
@@ -115,7 +116,7 @@ function calculateDaysSince(lastUpdatedTime, currentTime) {
 
 function calculatePetEnergySinceLastFed(owner) {
   const currentTime = new Date();
-  const pet = owner.pet();
+  const pet = owner.pet;
   const lastUpdatedTime = pet.energyLevelLastUpdatedTime();
   const days = calculateDaysSince(lastUpdatedTime, currentTime);
   if (days > 0) {
@@ -127,7 +128,7 @@ function calculatePetEnergySinceLastFed(owner) {
 
 function calculatePetHappinessSinceLastPlayed(owner) {
   const currentTime = new Date();
-  const pet = owner.pet();
+  const pet = owner.pet;
   const lastUpdatedTime = pet.happinessLevelLastUpdatedTime();
   const days = calculateDaysSince(lastUpdatedTime, currentTime);
   if (days > 0) {
@@ -138,19 +139,19 @@ function calculatePetHappinessSinceLastPlayed(owner) {
 }
 
 function getPhrases(pet) {
-  if (pet.energy() <= LOWER_BOUND_ENERGY) {
+  if (pet.energy <= LOWER_BOUND_ENERGY) {
     return PROMPTS.welcome_back_starving;
-  } else if (pet.happiness() <= LOWER_BOUND_HAPPINESS) {
+  } else if (pet.happiness <= LOWER_BOUND_HAPPINESS) {
     return PROMPTS.welcome_back_depressed;
-  } else if (pet.energy() >= HIGHER_BOUND_ENERGY) {
+  } else if (pet.energy >= HIGHER_BOUND_ENERGY) {
     return PROMPTS.welcome_back_excited;
   }
   return PROMPTS.welcome_back_random;
 }
 
 function getImages(pet) {
-  const energy = pet.energy();
-  const happiness = pet.happiness();
+  const energy = pet.energy;
+  const happiness = pet.happiness;
   if (energy <= LOWER_BOUND_ENERGY || happiness <= LOWER_BOUND_HAPPINESS) {
     return "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/starving.png?alt=media&token=08ae3057-3b7a-455a-93c4-981afb359171";
   } else if (energy >= HIGHER_BOUND_ENERGY || happiness >= HIGHER_BOUND_HAPPINESS) {
@@ -167,11 +168,11 @@ function getImages(pet) {
  * @param {owner} owner
  */
 function promoteToNextLevel(owner) {
-  let level = owner.level();
+  let level = owner.level;
   level = Number(level);
   level++;
   owner.setLevel(level);
-  const pet = owner.pet();
+  const pet = owner.pet;
   pet.resetPlayTimes();
   pet.resetEatTimes();
   if (LEVELS.hasOwnProperty(level + "")) {
@@ -182,7 +183,7 @@ function promoteToNextLevel(owner) {
 
 function grantBadgeByLevel(conv, frequency, levelOneBadge, levelTwoBadge) {
   let isBadgeGranted = false;
-  const currentLevel = conv.owner.level();
+  const currentLevel = conv.owner.level;
   switch (currentLevel) {
     case 1:
       isBadgeGranted = grantBadge(conv.owner, levelOneBadge);
@@ -197,7 +198,7 @@ function grantBadgeByLevel(conv, frequency, levelOneBadge, levelTwoBadge) {
 }
 
 function getBadgeByLevel(conv, levelOneBadge, levelTwoBadge) {
-  let currentLevel = conv.owner.level();
+  let currentLevel = conv.owner.level;
   let badge = null;
   switch (currentLevel) {
     case 1:
@@ -233,6 +234,18 @@ function createTable(achievedBadges) {
   return rows;
 }
 
+function generateUserId(conv) {
+  let userId = null;
+  if(conv.user.storage.userId) {
+    userId = conv.user.storage.userId;
+  } else {
+    userId = uuid();
+    console.log("user id is not found in user storage, generating a new id: ", userId);
+    conv.user.storage.userId = userId;
+  }
+  conv.user.id = userId;
+}
+
 module.exports = {
   findOwnerByID,
   findFoodTypeByName,
@@ -248,5 +261,6 @@ module.exports = {
   grantBadgeByLevel,
   getBadgeByLevel,
   getRandomPhrase,
-  createTable
+  createTable,
+  generateUserId
 };

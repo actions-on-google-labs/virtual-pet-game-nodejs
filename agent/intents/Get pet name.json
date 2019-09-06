@@ -1,0 +1,63 @@
+{
+  "id": "d394e17e-aa96-4c08-b41c-621eeaad654e",
+  "name": "Get pet name",
+  "auto": true,
+  "contexts": [
+    "get-pet-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "get-pet-name",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "Getpetname-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "92ebb7a2-d9a2-409e-88e1-533c2b67916e",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "petName",
+          "value": "$petName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what do you want to call your pet?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

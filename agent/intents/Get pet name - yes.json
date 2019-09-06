@@ -1,0 +1,37 @@
+{
+  "id": "db2dda15-cfbe-4864-bfe6-c19a25622222",
+  "parentId": "d394e17e-aa96-4c08-b41c-621eeaad654e",
+  "rootParentId": "d394e17e-aa96-4c08-b41c-621eeaad654e",
+  "name": "Get pet name - yes",
+  "auto": true,
+  "contexts": [
+    "Getpetname-followup",
+    "get-pet-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Getpetname.Getpetname-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

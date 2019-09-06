@@ -1,57 +1,47 @@
-// Copyright 2018, Google, Inc.
-// Licensed under the Apache License, Version 2.0 (the 'License');
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//    http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an 'AS IS' BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+Copyright 2019 Google Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
 
 'use strict';
 
 const admin = require('../database');
 const db = admin.firestore();
 const collectionRef = db.collection('owners');
+const util = require('../utilities');
 
 const Pet = require('./pet');
 
-const NORMAL_ENERGY = 5;
-const NORMAL_HAPPINESS = 5;
+const NORMAL_ENERGY = 2;
+const NORMAL_HAPPINESS = 2;
 const PLAY_TIMES = 0;
 const EAT_TIMES = 0;
 
 class Owner {
   constructor(id, name, pendingBadges, achievedBadges, level) {
-    this._id = id;
-    this._name = name;
-    this._pet = null;
-    this._pendingBadges = pendingBadges;
-    this._achievedBadges = achievedBadges;
-    this._level = level;
+    this.id = id;
+    this.name = name;
+    this.pet = null;
+    this.pendingBadges = pendingBadges;
+    this.achievedBadges = achievedBadges;
+    this.level = level;
   }
 
-  get name() { return this._name; }
-
-  get id() { return this._id; }
-
-  get pet() { return this._pet; }
-
-  get pendingBadges() { return this._pendingBadges; }
-
-  get achievedBadges() { return this._achievedBadges; }
-
-  get level() { return this._level; }
-
   hasBadge(badgeName) {
-    return this._achievedBadges.indexOf(badgeName) >=0;
+    return this.achievedBadges.indexOf(badgeName) >=0;
   }
 
   adopt(name) {
-    this._pet = new Pet(name, NORMAL_ENERGY, NORMAL_HAPPINESS, Date.now(), Date.now(), PLAY_TIMES, EAT_TIMES);
+    console.log('adopt before update: ', this.pet);
+    this.pet = new Pet(name, NORMAL_ENERGY, NORMAL_HAPPINESS, Date.now(), Date.now(), PLAY_TIMES, EAT_TIMES, Date.now());
     return this.update();
   }
 
@@ -63,36 +53,50 @@ class Owner {
     return feedStatus;
   }
 
+  rewind(pendingBadges) {
+    this.level = 1;
+    this.pendingBadges = pendingBadges;
+    this.achievedBadges = [];
+    this.pet.energy = 2;
+    this.pet.happiness = 2;
+    this.pet.playTimes = 0;
+    this.pet.eatTimes = 0;
+    this.pet.energyLevelLastUpdated = Date.now();
+    this.pet.happinessLevelLastUpdated = Date.now();
+    return this.update();
+  }
+
   update() {
-    return collectionRef.doc(this._id)
+    console.log('testing before update: ', this.pet);
+    return collectionRef.doc(this.id)
       .update({
-        pet: this._pet.serialize(),
-        pendingBadges: this._pendingBadges,
-        achievedBadges: this._achievedBadges,
-        level: this._level,
+        pet: this.pet.serialize(),
+        pendingBadges: this.pendingBadges,
+        achievedBadges: this.achievedBadges,
+        level: this.level,
       });
   }
 
   register() {
-    return collectionRef.doc(this._id)
+    return collectionRef.doc(this.id)
       .set({
-        name: this._name,
-        pendingBadges: this._pendingBadges,
-        achievedBadges: this._achievedBadges,
-        level: this._level,
+        name: this.name,
+        pendingBadges: this.pendingBadges,
+        achievedBadges: this.achievedBadges,
+        level: this.level,
       });
   }
 
   shouldMoveToNextLevel(){
-    return this.getPendingBadges().length === 0;
+    return this.pendingBadges.length === 0;
   }
 
   setLevel(level) {
-    this._level = level;
+    this.level = level;
   }
 
   setBadges(newBadges) {
-    this._pendingBadges = newBadges;
+    this.pendingBadges = newBadges;
   }
 }
 

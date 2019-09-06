@@ -1,0 +1,134 @@
+[
+  {
+    "id": "24ed0154-00db-43e0-a65e-e91f657265f7",
+    "data": [
+      {
+        "text": "ball",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e795b151-05a0-42a4-a319-960d9c372bfc",
+    "data": [
+      {
+        "text": "running in the ",
+        "userDefined": false
+      },
+      {
+        "text": "ball",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7b44c0aa-eb1d-4664-af4a-2e7aa0afdcdf",
+    "data": [
+      {
+        "text": "run in the ",
+        "userDefined": false
+      },
+      {
+        "text": "wheel",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "98705d34-4d47-45bc-bf60-91f892e75a26",
+    "data": [
+      {
+        "text": "play in the ",
+        "userDefined": false
+      },
+      {
+        "text": "maze",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8903c981-a7bb-4567-ae13-5ad7f5ef8ce9",
+    "data": [
+      {
+        "text": "playing in the ",
+        "userDefined": false
+      },
+      {
+        "text": "maze",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a8e9d0c0-2747-49f4-b544-762fd280f03e",
+    "data": [
+      {
+        "text": "running in the ",
+        "userDefined": false
+      },
+      {
+        "text": "wheel",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "39222fd1-6146-48ca-91f9-4f0cfaab1086",
+    "data": [
+      {
+        "text": "wheel",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "0469e2d0-c2dd-4207-8cb7-a511a27345d1",
+    "data": [
+      {
+        "text": "maze",
+        "alias": "activityType",
+        "meta": "@activityType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

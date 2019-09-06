@@ -1,0 +1,38 @@
+[
+  {
+    "id": "e0188bb1-b097-4a3a-a49b-4608a021d7a6",
+    "data": [
+      {
+        "text": "what badges do I have?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3d2e054c-5ef0-452c-a171-4a6bf8c312c8",
+    "data": [
+      {
+        "text": "show me the badges i have",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6ea16d69-0069-4b3f-b23b-b637f8f7fc6e",
+    "data": [
+      {
+        "text": "show all my badges",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "78cd0a3e-b5f2-4bab-87e7-bd9e33d50cc5",
+    "data": [
+      {
+        "text": "new badge",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "39df742d-32d4-4c2b-8255-8dc4773b8a76",
+    "data": [
+      {
+        "text": "show me the new badge",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,28 +1,28 @@
 {
   "fedBadge": {
     "title": "fedBadge",
-    "image": "https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/firstTimeFed.png?alt=media&token=54d0e7f2-cf1e-40f8-a871-5fe128fbcb9e",
+    "image": "/images/resize.png",
     "audio": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
     "saying": "feed badge",
     "description": "Earn this badge after you fed your pet"
   },
   "playedBadge": {
     "title": "playedBadge",
-    "image":"https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/firstTimeFed.png?alt=media&token=54d0e7f2-cf1e-40f8-a871-5fe128fbcb9e",
+    "image":"/images/resize_fit.png",
     "audio": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
     "saying": "play badge",
     "description": "Earn this badge after you played with your pet"
   },
   "played3TimesBadge": {
     "title": "played3TimesBadge",
-    "image":"https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/firstTimeFed.png?alt=media&token=54d0e7f2-cf1e-40f8-a871-5fe128fbcb9e",
+    "image":"/images/resize_beast.png",
     "audio": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
     "saying": "played three times badge",
     "description": "Earn this badge after you played with your pet 3 times"
   },
   "fed3TimesBadge": {
     "title": "fed3TimesBadge",
-    "image":"https://firebasestorage.googleapis.com/v0/b/virtual-pet2.appspot.com/o/firstTimeFed.png?alt=media&token=54d0e7f2-cf1e-40f8-a871-5fe128fbcb9e",
+    "image":"/images/resize_foodie.png",
     "audio": "https://actions.google.com/sounds/v1/crowds/battle_crowd_celebrate_stutter.ogg",
     "saying": "fed three times badge",
     "description": "Earn this badge after you fed your pet 3 times"

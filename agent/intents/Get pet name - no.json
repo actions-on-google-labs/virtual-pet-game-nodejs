@@ -1,0 +1,37 @@
+{
+  "id": "3274cfe5-5ffa-48e0-9236-6c09d65b54f7",
+  "parentId": "d394e17e-aa96-4c08-b41c-621eeaad654e",
+  "rootParentId": "d394e17e-aa96-4c08-b41c-621eeaad654e",
+  "name": "Get pet name - no",
+  "auto": true,
+  "contexts": [
+    "Getpetname-followup",
+    "get-pet-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Getpetname.Getpetname-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "No worries. I can take care of it. Your pet will be waiting for you at home. Thank you for adopting a pet. Come back tomorrow to play or feed your pet."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

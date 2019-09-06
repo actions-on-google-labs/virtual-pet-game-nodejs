@@ -1,0 +1,124 @@
+[
+  {
+    "id": "13ac762d-e18f-4369-97f1-6c17c97cfc60",
+    "data": [
+      {
+        "text": "feel free to call me ",
+        "userDefined": false
+      },
+      {
+        "text": "john",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9f15e415-ffeb-4b20-8cfb-fdd6a3c40f01",
+    "data": [
+      {
+        "text": "just call me ",
+        "userDefined": false
+      },
+      {
+        "text": "terry",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0adbaac7-2136-42df-95df-29b8d966852a",
+    "data": [
+      {
+        "text": "my friend calls me ",
+        "userDefined": false
+      },
+      {
+        "text": "frank",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5a8e8f0d-d9ff-472f-b255-8552433eb0e6",
+    "data": [
+      {
+        "text": "i like to be called ",
+        "userDefined": false
+      },
+      {
+        "text": "tom",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aea7e4ae-6433-4386-9b3b-7d49900668a0",
+    "data": [
+      {
+        "text": "jim",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d887a713-c507-472b-b505-53ee323d4321",
+    "data": [
+      {
+        "text": "call me ",
+        "userDefined": false
+      },
+      {
+        "text": "Peter",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "16df7d97-a37e-46aa-89f4-d92ea2247a90",
+    "data": [
+      {
+        "text": "my name is ",
+        "userDefined": false
+      },
+      {
+        "text": "mandy",
+        "alias": "name",
+        "meta": "@sys.given-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "id": "31bc116e-6b4e-4fab-bd92-b0505652b44d",
+  "name": "Adopt pet",
+  "auto": true,
+  "contexts": [
+    "adopt_pet"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "adopt_pet",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d4483e42-a5b8-4bc9-89df-4645e1e012f2",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "petName",
+          "value": "$petName",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what do you want to call your pet?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

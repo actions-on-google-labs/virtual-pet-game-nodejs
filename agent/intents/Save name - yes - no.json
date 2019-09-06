@@ -1,0 +1,36 @@
+{
+  "id": "fe55395b-412c-4e61-8974-143396066c6a",
+  "parentId": "0b10e3a6-2038-4e55-aa74-177b80e9793c",
+  "rootParentId": "975f83d8-ee2a-4038-b1f9-37d99c5ced78",
+  "name": "Save name - yes - no",
+  "auto": true,
+  "contexts": [
+    "Savename-yes-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Savename.Savename-yes.Savename-yes-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Not a problem. Thank you for stopping by. I will be waiting for you to return and adopt a pet. Have a good day!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

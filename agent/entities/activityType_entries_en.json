@@ -1,0 +1,20 @@
+[
+  {
+    "value": "ball",
+    "synonyms": [
+      "ball"
+    ]
+  },
+  {
+    "value": "maze",
+    "synonyms": [
+      "maze"
+    ]
+  },
+  {
+    "value": "wheel",
+    "synonyms": [
+      "wheel"
+    ]
+  }
+]

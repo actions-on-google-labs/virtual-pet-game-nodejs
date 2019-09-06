@@ -1,0 +1,111 @@
+[
+  {
+    "id": "75c9124d-34f5-4e8b-bcff-1b7280ca6042",
+    "data": [
+      {
+        "text": "I am allergic to ",
+        "userDefined": false
+      },
+      {
+        "text": "hamster",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " and I want a ",
+        "userDefined": false
+      },
+      {
+        "text": "cat",
+        "alias": "animal",
+        "meta": "@animal",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6d888cff-61fc-4d29-92b2-f610b7e5bbea",
+    "data": [
+      {
+        "text": "I want a different pet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "67cc5270-81d6-46d6-8e52-ab1fe001a575",
+    "data": [
+      {
+        "text": "I hate hamster. Do you have different pet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e3837705-58e1-4359-a7c4-114ff92c8624",
+    "data": [
+      {
+        "text": "What else do you have?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "36f360d4-0298-47ad-84ad-919cf06254a5",
+    "data": [
+      {
+        "text": "Do you have any other animals?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "476e589c-0c33-4a3c-9ecf-1e3b6be14bbf",
+    "data": [
+      {
+        "text": "What other options do I have? Do you have a ",
+        "userDefined": false
+      },
+      {
+        "text": "horse",
+        "alias": "animal",
+        "meta": "@animal",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e339b966-901d-46b5-9e85-324dd1686ab5",
+    "data": [
+      {
+        "text": "I don\u0027t want a hamster. What else do you have?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
